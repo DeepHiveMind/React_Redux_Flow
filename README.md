@@ -13,7 +13,10 @@ Build a React Redux Login, Logout, Registration example with LocalStorage, React
 - React Function Components for accessing protected Resources (Authorization)
 - Dynamic Navigation Bar in React App
 
-# Overview of React Redux Registration & Login example
+## Overview of React Redux Registration & Login example
 
+Build a React.js application using Hooks in that:
 
-
+* There are Login/Logout, Signup pages.
+* Form data will be validated by front-end before being sent to back-end.
+* Depending on User’s roles (admin, moderator, user), Navigation Bar changes its items automatically.
