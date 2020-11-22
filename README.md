@@ -93,6 +93,73 @@ Look at the diagram below.
 
 – user.service uses auth-header() helper function to add JWT to HTTP header. auth-header() returns an object containing the JWT of the currently logged in user from Local Storage.
 
+## Technology
+The below modules are used:
+
+* React 16
+* react-redux 7.2.1
+* redux 4.0.5
+* redux-thunk 2.3.0
+* react-router-dom 5
+* axios 0.19.2
+* react-validation 3.0.7
+* Bootstrap 4
+* validator 13.1.1
+
+## Project Structure
+
+The folders & files structure for this React Redux Registration and Login application:
+
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(2).png)
+
+With the explanation in diagram above, you can understand the project structure easily.
+
+But as to Redux elements that are used:
+– actions folder contains all the action creators (auth.js for register & login, message.js for response message from server).
+– reducers folder contains all the reducers, each reducer updates a different part of the application state corresponding to dispatched action.
+
+## Setup React.js Project
+
+Open cmd at the folder you want to save Project folder, run command:
+  
+  npx create-react-app react-redux-hooks-jwt-auth
+
+Add Router Dom Module for later use: 
+
+  npm install react-router-dom.
+
+## Import Bootstrap
+Run command: npm install bootstrap.
+
+Open src/App.js and modify the code as following - 
+
+  import React from "react";
+  import "bootstrap/dist/css/bootstrap.min.css";
+
+  const App = () => {
+    // ...
+  }
+
+  export default App;
+
+## Create Services
+
+Create two services in src/services folder:
+
+* Authentication service
+* Data service
+
+  services
+
+    auth-header.js
+
+    auth.service.js (Authentication service)
+
+    user.service.js (Data service)
+
+
+
+
 
 
 
