@@ -1,5 +1,3 @@
-https://bezkoder.com/react-hooks-redux-login-registration-example/
-
 # React_Redux_Flow
 React_Redux flow for State Management 
 
@@ -76,7 +74,7 @@ You can find step by step to implement these back-end servers in following tutor
 
 Look at the diagram below.
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(3).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Imag31%20(3).png)
 
 
 – The App page is a container with React Router. It gets app state from Redux Store. Then the navbar now can display based on the state.
