@@ -63,7 +63,7 @@ For JWT Authentication, we’re gonna call 2 endpoints:
 
 The following flow shows you an overview of Requests and Responses that React.js Client will make or receive. This React Client must add a JWT to HTTP Header before sending request to protected resources.
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(2).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Imag1%20(4).png)
 
 You can find step by step to implement these back-end servers in following tutorial:
 
@@ -76,7 +76,7 @@ You can find step by step to implement these back-end servers in following tutor
 
 Look at the diagram below.
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(2).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(3).png)
 
 
 – The App page is a container with React Router. It gets app state from Redux Store. Then the navbar now can display based on the state.
@@ -110,7 +110,7 @@ The below modules are used:
 
 The folders & files structure for this React Redux Registration and Login application:
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(2).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Imag1%20(2).png)
 
 With the explanation in diagram above, you can understand the project structure easily.
 
@@ -172,7 +172,7 @@ It provides following important functions:
 
 services/auth.service.js
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(2).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Imag1%20(1).png)
 
 ## Data service
 
