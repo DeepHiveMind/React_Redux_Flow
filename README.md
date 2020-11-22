@@ -24,4 +24,4 @@ Build a React.js application using Hooks:
 Here are the screenshots: 
 – Registration Page:
 
-![](images/Image1 (1).png)
+![](Images/Image1 (1).png)
