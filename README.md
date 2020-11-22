@@ -24,5 +24,6 @@ Build a React.js application using Hooks:
 Here are the screenshots: 
 – Registration Page:
 
-![GitHub Logo](/images/Image1 (1).png
+![](/images/Image1 (1).png)
+
 
