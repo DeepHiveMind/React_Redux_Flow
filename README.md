@@ -27,31 +27,31 @@ Screenshots: Registration Page:
 
 Signup Failed: 
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(2).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(9).png)
 
 Form Validation Support:
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(3).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(8).png)
 
 Login Page:
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(4).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(7).png)
 
 Profile Page (for successful Login):
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(5).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(6).png)
 
 For Moderator account login, the navigation bar will change by authorities:
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(6).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(5).png)
 
 Check Browser Local Storage:
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(7).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(3).png)
 
 Check State in Redux using redux-devtools-extension:
 
-![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(8).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(2).png)
 
 
 
