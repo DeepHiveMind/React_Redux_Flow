@@ -24,4 +24,4 @@ Build a React.js application using Hooks:
 Here are the screenshots: 
 – Registration Page:
 
-![](Images/Image1 (1).png)
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(1).png)
