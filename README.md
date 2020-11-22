@@ -21,7 +21,42 @@ Build a React.js application using Hooks:
 * Form data will be validated by front-end before being sent to back-end.
 * Depending on User’s roles (admin, moderator, user), Navigation Bar changes its items automatically.
 
-Here are the screenshots: 
-– Registration Page:
+Screenshots: Registration Page:
 
 ![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(1).png)
+
+Signup Failed: 
+
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(2).png)
+
+Form Validation Support:
+
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(3).png)
+
+Login Page:
+
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(4).png)
+
+Profile Page (for successful Login):
+
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(5).png)
+
+For Moderator account login, the navigation bar will change by authorities:
+
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(6).png)
+
+Check Browser Local Storage:
+
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(7).png)
+
+Check State in Redux using redux-devtools-extension:
+
+![](https://github.com/DeepHiveMind/React_Redux_Flow/blob/main/Images/Image1%20(8).png)
+
+
+
+
+
+
+
+
