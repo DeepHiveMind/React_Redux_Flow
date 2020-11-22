@@ -21,8 +21,6 @@ Build a React.js application using Hooks:
 * Form data will be validated by front-end before being sent to back-end.
 * Depending on User’s roles (admin, moderator, user), Navigation Bar changes its items automatically.
 
-Here are the screenshots:
+Here are the screenshots: 
 – Registration Page:
-
-
 
