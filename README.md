@@ -122,25 +122,25 @@ But as to Redux elements that are used:
 
 Open cmd at the folder you want to save Project folder, run command:
   
-  npx create-react-app react-redux-hooks-jwt-auth
+    npx create-react-app react-redux-hooks-jwt-auth
 
 Add Router Dom Module for later use: 
 
-  npm install react-router-dom.
+    npm install react-router-dom.
 
 ## Import Bootstrap
 Run command: npm install bootstrap.
 
 Open src/App.js and modify the code as following - 
 
-  import React from "react";
-  import "bootstrap/dist/css/bootstrap.min.css";
+    import React from "react";
+    import "bootstrap/dist/css/bootstrap.min.css";
 
-  const App = () => {
-    // ...
-  }
+    const App = () => {
+      // ...
+    }
 
-  export default App;
+    export default App;
 
 ## Create Services
 
@@ -151,14 +151,14 @@ Create two services in src/services folder:
 
  * services
 
-    auth-header.js
+          auth-header.js
 
-    auth.service.js (Authentication service)
+          auth.service.js (Authentication service)
 
-    user.service.js (Data service)
+          user.service.js (Data service)
     
 Before working with these services, install Axios with command:
-    npm install axios
+           npm install axios
 
 ## Authentication service
 
@@ -180,30 +180,30 @@ In the case we access protected resources, the HTTP request needs Authorization 
 
 Create a helper function called authHeader() inside auth-header.js:
 
-export default function authHeader() {
-  const user = JSON.parse(localStorage.getItem('user'));
+    export default function authHeader() {
+      const user = JSON.parse(localStorage.getItem('user'));
 
-  if (user && user.accessToken) {
-    return { Authorization: 'Bearer ' + user.accessToken };
-  } else {
-    return {};
-  }
-}
+      if (user && user.accessToken) {
+        return { Authorization: 'Bearer ' + user.accessToken };
+      } else {
+        return {};
+      }
+    }
 
 The code above checks Local Storage for user item. If there is a logged in user with accessToken (JWT), return HTTP Authorization header. Otherwise, return an empty object.
 
 Note: For Node.js Express back-end, please use x-access-token header:
 
-export default function authHeader() {
-  const user = JSON.parse(localStorage.getItem('user'));
+    export default function authHeader() {
+      const user = JSON.parse(localStorage.getItem('user'));
 
-  if (user && user.accessToken) {
-    // for Node.js Express back-end
-    return { 'x-access-token': user.accessToken };
-  } else {
-    return {};
-  }
-}
+      if (user && user.accessToken) {
+        // for Node.js Express back-end
+        return { 'x-access-token': user.accessToken };
+      } else {
+        return {};
+      }
+    }
 
 
 Now define a service for accessing data in services/user.service.js:
@@ -216,11 +216,11 @@ Create two kind of actions in src/actions folder:
 
  * actions
 
-      types.js
+          types.js
 
-      auth.js (register/login/logout actions)
+          auth.js (register/login/logout actions)
 
-      message.js (set/clear message actions)
+          message.js (set/clear message actions)
 
 ## Action Types
 Define some string constant that indicates the type of action being performed.
@@ -893,50 +893,50 @@ const Register = () => {
   );
 };
 
-export default Register;
-Profile Page
-This page gets current User from Local Storage by getting user in the application state and show user information (with token).
+      export default Register;
+      Profile Page
+      This page gets current User from Local Storage by getting user in the application state and show user information (with token).
 
-components/Profile.js
+      components/Profile.js
 
-import React from "react";
-import { Redirect } from 'react-router-dom';
-import { useSelector } from "react-redux";
+      import React from "react";
+      import { Redirect } from 'react-router-dom';
+      import { useSelector } from "react-redux";
 
-const Profile = () => {
-  const { user: currentUser } = useSelector((state) => state.auth);
+      const Profile = () => {
+        const { user: currentUser } = useSelector((state) => state.auth);
 
-  if (!currentUser) {
-    return <Redirect to="/login" />;
-  }
+        if (!currentUser) {
+          return <Redirect to="/login" />;
+        }
 
-  return (
-    <div className="container">
-      <header className="jumbotron">
-        <h3>
-          <strong>{currentUser.username}</strong> Profile
-        </h3>
-      </header>
-      <p>
-        <strong>Token:</strong> {currentUser.accessToken.substring(0, 20)} ...{" "}
-        {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
-      </p>
-      <p>
-        <strong>Id:</strong> {currentUser.id}
-      </p>
-      <p>
-        <strong>Email:</strong> {currentUser.email}
-      </p>
-      <strong>Authorities:</strong>
-      <ul>
-        {currentUser.roles &&
-          currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
-      </ul>
-    </div>
-  );
-};
+        return (
+          <div className="container">
+            <header className="jumbotron">
+              <h3>
+                <strong>{currentUser.username}</strong> Profile
+              </h3>
+            </header>
+            <p>
+              <strong>Token:</strong> {currentUser.accessToken.substring(0, 20)} ...{" "}
+              {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
+            </p>
+            <p>
+              <strong>Id:</strong> {currentUser.id}
+            </p>
+            <p>
+              <strong>Email:</strong> {currentUser.email}
+            </p>
+            <strong>Authorities:</strong>
+            <ul>
+              {currentUser.roles &&
+                currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
+            </ul>
+          </div>
+        );
+      };
 
-export default Profile;
+      export default Profile;
 
 ## Profile Page
 The page gets current User from Local Storage by getting user in the application state and show user information (with token).
@@ -1240,35 +1240,35 @@ src/App.js
 
 Open src/App.css and write some CSS code as following:
 
-label {
-  display: block;
-  margin-top: 10px;
-}
+    label {
+      display: block;
+      margin-top: 10px;
+    }
 
-.card-container.card {
-  max-width: 350px !important;
-  padding: 40px 40px;
-}
+    .card-container.card {
+      max-width: 350px !important;
+      padding: 40px 40px;
+    }
 
-.card {
-  background-color: #f7f7f7;
-  padding: 20px 25px 30px;
-  margin: 0 auto 25px;
-  margin-top: 50px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
+    .card {
+      background-color: #f7f7f7;
+      padding: 20px 25px 30px;
+      margin: 0 auto 25px;
+      margin-top: 50px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    }
 
-.profile-img-card {
-  width: 96px;
-  height: 96px;
-  margin: 0 auto 10px;
-  display: block;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
+    .profile-img-card {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 10px;
+      display: block;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+    }
